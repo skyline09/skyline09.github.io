@@ -15,7 +15,7 @@
 <meta property="og:description" content="1. 代码应当易于理解好代码不是越长也好（可能存在冗余、拖沓）也不是越短越好（可能存在过于简写、hack逻辑），而是尽量减短 别人阅读并理解代码的时间，降低后期维护成本。
 2. 把信息装到名字里
 选择专业的词不要滥用get、set，这两个名字一般用于class的private变量的存取函数get –&amp;gt; fetch, extract, download, computesize –&amp;gt; h">
-<meta property="og:updated_time" content="2016-06-26T14:12:23.000Z">
+<meta property="og:updated_time" content="2016-06-26T14:20:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="编写可读代码的艺术">
 <meta name="twitter:description" content="1. 代码应当易于理解好代码不是越长也好（可能存在冗余、拖沓）也不是越短越好（可能存在过于简写、hack逻辑），而是尽量减短 别人阅读并理解代码的时间，降低后期维护成本。
@@ -96,7 +96,9 @@
 </li>
 <li><p>循环迭代器<br>当函数内有多次使用循环迭代器时，不要仅仅使用 i，j，it，iter这样简单的变量，而是要加上循环变量简称加以区分 (Idx表示index，it表示iterator)<br>例如：packageInfos迭代时–&gt; pIdx, pIt,     dataInfos迭代时–&gt; dIdx, dIt</p>
 </li>
-<li><p>变量带单位信息<br>|      函数参数            |      带单位的参数     |<br>| —————- | ————————— |<br>| start(int delay) | delay –&gt; delay_secs |<br>| createCache(int size) | size –&gt; size_mb |<br>| ThrottleDownload(float limit) | limit –&gt; max_kbps |<br>| Rotate(float angle) | angle –&gt; degrees_cw |</p>
+<li><p>变量带单位信息</p>
+<pre><code>函数参数            <span class="string">|      带单位的参数     </span>
+</code></pre><p>—————- | —————————<br>start(int delay) | delay –&gt; delay_secs<br>createCache(int size) | size –&gt; size_mb<br>ThrottleDownload(float limit) | limit –&gt; max_kbps<br>Rotate(float angle) | angle –&gt; degrees_cw </p>
 </li>
 <li><p>名字长度<br>变量名字应该充分表达变量信息，作用域越小的变量，名字可以适当简短，而全局变量则不行</p>
 </li>
@@ -170,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/26/编写可读代码的艺术/" data-id="cipwojx1f0001orpab31ua1xg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/06/26/编写可读代码的艺术/" data-id="cipwoo2f10001pnpauz97tpao" class="article-share-link">Share</a>
       
       
     </footer>
